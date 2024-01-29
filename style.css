@@ -291,6 +291,14 @@ p::selection {
     border: 1px solid var(--first-color);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 1);
 }
+.text_link{
+    text-decoration: none;
+    color: var(--first-color);
+    text-shadow: 1px 1px 1px var(--third-color);
+}
+.text_link:hover{
+    color: aqua;
+}
 
 /*=============== HABILIDADES ===============*/
 .skills__container {
