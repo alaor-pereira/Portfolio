@@ -107,7 +107,7 @@ img {
 }
 
 /*=============== SELEÇÃO DE TEXTO ===============*/
-p::selection {
+::selection {
     background: var(--first-color);
     color: var(--third-color);
 }
