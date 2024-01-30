@@ -70,8 +70,8 @@ img {
 .bg {
     background-image:url(../images/background.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
-    
+    background-size:cover;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -404,6 +404,7 @@ p::selection {
 }
 .contact__button {
     font-family: var(--body-font);
+    color: #222222;
     display: inline-block;
     border: var(--third-color);
     background: var(--first-color);
@@ -574,6 +575,10 @@ p::selection {
 body.white {
     background-image: url(../images/background2.jpg);
     color: var(--third-color);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
 
     .home__social-icon {
         color: var(--third-color);
