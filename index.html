@@ -82,13 +82,16 @@
                     
                 <div>
                     <h2 class="about__subtitle">Alaor Pereira</h2>
-                    <p class="about__text">Desde cedo, sempre nutri um profundo respeito pelo serviço à pátria, por isso trago em minha bagagem uma experiência única como militar da Força Aérea Brasileira (FAB). Ingressei em 2016 nas Forças Armadas com o intuito de contribuir para a defesa do meu país e desenvolver habilidades que, mais tarde, revelaram-se cruciais para minha jornada.<br>
+                    <p class="about__text">Desde cedo, sempre nutri um profundo respeito pelo serviço à pátria, por isso trago em minha bagagem uma experiência única como militar da <a href="https://www.fab.mil.br/index.php" target="_blank" rel="external" class="text_link">Força Aérea Brasileira (FAB)</a>. Ingressei em 2016 nas Forças Armadas com o intuito de contribuir para a defesa do meu país e desenvolver habilidades que, mais tarde, revelaram-se cruciais para minha jornada.<br>
                     <br>Ao longo dos 8 anos de serviço militar, aprendi valores fundamentais como disciplina, hierarquia, liderança, trabalho em equipe e resiliência, que moldaram minha personalidade e influenciaram as minhas escolhas.<br>
                     <br>Contudo, ao seguir novos rumos, minha curiosidade pela tecnologia falou mais alto. Com essa motivação, embarquei em uma jornada diferente, adentrando ao fascinante mundo da programação. A paixão pela tecnologia e o desejo de contribuir para o avanço da sociedade através da inovação me conduziram a essa nova empreitada.<br>
                     <br>Cursando Bacharelado em Gestão da Tecnologia da Informação, na
                     <a href="https://www.uninter.com/" target="_blank" rel="external" class="text_link">UNINTER Educacional S/A</a>, buscando aprimorar meu conhecimento e aplicar habilidades adquiridas no universo militar em um contexto mais amplo. Estudar essa arte fascinante é uma extensão natural do meu interesse por tecnologia. Vejo agora a combinação de minha formação militar e acadêmica me proporcionando uma perspectiva única e valiosa. A fusão entre a disciplina militar e a criatividade da programação forma a base sólida sobre a qual construo meu caminho.<br>
                     <br>Estou determinado a enfrentar os desafios que o futuro reserva, sempre buscando maneiras de aplicar minha experiência e conhecimento para fazer a diferença no mundo da programação e da inovação tecnológica.</p>           
-                </div>                                   
+                </div>
+                <div>
+
+                </div>                             
             </div>
         </section>
 
@@ -185,12 +188,14 @@
             <h2 class="section-title">Contato</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" placeholder="..." id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
-                </form>
+                <form class="contact__form" action="https://formsubmit.co/7b60052f539ddb9ce6010937990f71de" method="POST">
+                    <input type="text" placeholder="Seu Nome:" name="name" class="contact__input" required>
+                    <input type="email" placeholder="Seu E-mail:" name="email" class="contact__input" required>
+                    <input type="text" placeholder="Assunto:" class="contact__input">
+                    <textarea placeholder="Mensagem..." cols="0" rows="10" class="contact__input" required></textarea>
+                    <button type="submit" class="contact__button">Enviar</button>
+                    <input type="hidden" target="_blank" name="_next" value="http://www.alaorpereira.dev.br/thanks.html">
+               </form>
             </div>
         </section>
     </main>
@@ -198,7 +203,7 @@
 
     <!--=============== FOOTER ===============-->
     <footer class="footer">
-            <a href="./index.html" class="footer_title">Me siga nas redes</a>
+            <a href="" class="footer_title">Me siga nas redes:</a>
         <div class="footer__social">
             <a href="https://www.facebook.com/alaorcristian/" target="_blank" rel="external" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
             <a href="https://www.instagram.com/alaorcris/" target="_blank" rel="external" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
@@ -220,5 +225,6 @@
 
     <!--=============== SCRIPT PAGE ===============-->
     <script src="script.js"></script>
+
 </body>
 </html>
