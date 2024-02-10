@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!--Metadados-->
+<!--==================== METADADOS ====================-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Link CSS-->
+<!--==================== LINK CSS ====================-->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Favicon -->
+<!--==================== FAVICON ====================-->
     <link rel="shortcut icon" href="./assets/images/apescuro.png" type="image/x-icon">
-    <!--Icones das redes sociais-->
+<!--==================== ICONES REDE SOCIAIS ====================-->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>Portfólio Alaor Pereira</title>
 </head>
+
 <body class="bg">
-    <!-- HEADER -->
+
+<!--==================== HEADER ====================-->
     <header class="my_header">
         <nav class="nav bd-grid">
             <div>
@@ -36,7 +38,7 @@
                     <div class="ball"></div>
                 </label>
             </div>
-            <!--=============== MENU HAMBURGUER ===============-->
+<!--==================== MENU HAMBURGUER ====================-->
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
@@ -44,20 +46,19 @@
     </header>
 
     <main class="l-main">
-        <!--=============== INÍCIO ===============-->
+<!--==================== INÍCIO ====================-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title">Olá, mundo!<br>Sou <span class="home__title-color">Alaor Pereira</span><br>Dev Front-End.</h1>
-
+            <!--=============== BOTÃO CONTATO ===============-->
                 <a href="#contact" class="button">Contato</a>
             </div>
-
-        <!--=============== LINKS ===============-->
+            <!--=============== LINKS LINKEDIN / GITHUB ===============-->
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/alaor-pereira-3b50aa222/" target="_blank" rel="external" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/alaor-pereira" target="_blank" rel="external" class="home__social-icon"><i class='bx bxl-github' ></i></a>
             </div>
-        <!--=============== IMG INICIAL ===============-->
+            <!--=============== IMG INICIAL ===============-->
             <div class="home__img">
                 <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <mask id="mask0" mask-type="alpha">
@@ -71,7 +72,7 @@
             </div>
         </section>
 
-        <!--=============== SOBRE MIM ===============-->
+<!--==================== SOBRE MIM ====================-->
         <section class="about section " id="about">
             <h2 class="section-title">Sobre mim</h2>
 
@@ -86,14 +87,12 @@
                     <br>Contudo, ao seguir novos rumos, minha curiosidade pela tecnologia falou mais alto. Com essa motivação, embarquei em uma jornada diferente, adentrando ao fascinante mundo da programação. A paixão pela tecnologia e o desejo de contribuir para o avanço da sociedade através da inovação me conduziram a essa nova empreitada.<br>
                     <br>Cursando Bacharelado em Gestão da Tecnologia da Informação, na
                     <a href="https://www.uninter.com/" target="_blank" rel="external" class="text_link">UNINTER Educacional S/A</a>, buscando aprimorar meu conhecimento e aplicar habilidades adquiridas no universo militar em um contexto mais amplo. Estudar essa arte fascinante é uma extensão natural do meu interesse por tecnologia. Vejo agora a combinação de minha formação militar e acadêmica me proporcionando uma perspectiva única e valiosa. A fusão entre a disciplina militar e a criatividade da programação forma a base sólida sobre a qual construo meu caminho.<br>
-                    <br>Estou determinado a enfrentar os desafios que o futuro reserva, sempre buscando maneiras de aplicar minha experiência e conhecimento para fazer a diferença no mundo da programação e da inovação tecnológica.</p>
-                    
-                           
+                    <br>Estou determinado a enfrentar os desafios que o futuro reserva, sempre buscando maneiras de aplicar minha experiência e conhecimento para fazer a diferença no mundo da programação e da inovação tecnológica.</p>  
                 </div>                            
             </div>
         </section>
 
-        <!--=============== HABILIDADES ===============-->
+<!--==================== HABILIDADES ====================-->
         <section class="skills section" id="skills">
             <h2 class="section-title">Habilidades</h2>
 
@@ -148,14 +147,15 @@
             </div>
         </section>
 
-        <!--=============== PROJETOS ===============-->
+<!--==================== PROJETOS ====================-->
         <section class="work section" id="work">
             <h2 class="section-title">Projetos</h2>
 
             <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="./assets/images/emprogresso.jpg" alt="Em desenvolvimento">
-                    <p class="project-name">Em desenvolvimento...</p>
+
+                <a href="./assets/projetos/Card Slider Game FPS/index.html" target="_blank" rel="external" class="work__img">
+                    <img src="./assets/images/projetocards.jpg" alt="projetoCards">
+                    <p class="project-name">Card Slider Game</p>
                 </a>
                 <a href="" class="work__img">
                     <img src="./assets/images/emprogresso.jpg" alt="Em desenvolvimento">
@@ -168,25 +168,24 @@
             </div>
         </section>
 
-        <!--=============== CONTATO ===============-->
+<!--==================== CONTATO ====================-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contato</h2>
-
             <div class="contact__container bd-grid">
                 <form class="contact__form" action="https://formsubmit.co/7b60052f539ddb9ce6010937990f71de" method="POST">
-                    <input type="text" placeholder="Seu Nome:" name="name" class="contact__input" required>
-                    <input type="email" placeholder="Seu E-mail:" name="email" class="contact__input" required>
-                    <input type="text" placeholder="Assunto:" class="contact__input">
-                    <textarea placeholder="Mensagem..." cols="0" rows="10" class="contact__input" required></textarea>
+                    <input type="text" name="name" placeholder="Seu nome:" class="contact__input">
+                    <input type="email" name="email" placeholder="Seu melhor e-mail:" class="contact__input">
+                    <input type="text" name="subject" placeholder="Assunto:" class="contact__input">
+                    <textarea name="message" placeholder="Deixe uma mensagem..." class="contact__input message"></textarea>
                     <button type="submit" class="contact__button">Enviar</button>
+                    <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://www.alaorpereira.dev.br/assets/html/thanks.html">
-               </form>
+                </form>
             </div>
         </section>
     </main>
-    <a class="link-home" href="#">&#9650;</a>
 
-    <!--=============== FOOTER ===============-->
+<!--==================== FOOTER ====================-->
     <footer class="footer">
             <a href="" class="footer_title">Me siga nas redes:</a>
         <div class="footer__social">
@@ -196,8 +195,8 @@
         <p class="footer__copy">&#169; Desenvolvido por Alaor Pereira. Todos os direitos resevados.</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/d5404adf8d.js" crossorigin="anonymous"></script>
-    <!--=============== SCROLL TOP ===============-->
+<!--==================== BOTÃO VOLTAR AO TOPO ====================-->
+    <a class="link-home" href="#">&#9650;</a>
     <script>
         window.addEventListener('scroll', function() {
             let scroll = document.querySelector('.link-home')
@@ -205,11 +204,15 @@
         })
     </script>
 
-    <!--=============== SCROLL REVEAL ===============-->
+<!--==================== ICONES MODO DARK/LIGHT ====================-->
+    <script src="https://kit.fontawesome.com/d5404adf8d.js" crossorigin="anonymous"></script>
+
+<!--==================== SCROLL REVEAL ====================-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--=============== SCRIPT PAGE ===============-->
+<!--==================== SCRIPTS DA PÁGINA ====================-->
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/html/thanks.html"></script>
 
 </body>
 </html>
