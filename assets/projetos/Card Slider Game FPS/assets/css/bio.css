@@ -1,0 +1,220 @@
+/*=============== FONTES ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@font-face {
+	font-family: Rainbow;
+	src: url(../fonts/Rainbow.ttf);
+}
+@font-face {
+	font-family: GreatSejagad;
+	src: url(../fonts/Great_Sejagad.ttf);
+}
+
+/*=============== CONFIGS GERAIS DA PÁGINA ===============*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+/*=============== BACKGROUND DA PÁGINA ===============*/
+.bg {
+    background-image:url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*=============== CONFIGS GERAIS DA SEÇÃO ===============*/
+.container {
+	width: 1300px;
+	height: 100%;
+	margin: 0 auto;
+    padding: 0;
+}
+
+/*=============== LOGO e TÍTULO ===============*/
+.game-logo {
+    max-width: 150px;
+    padding: 0px;
+    margin: 0;
+}
+.agent-title {
+    display: flex;
+    justify-content:start;
+	margin-bottom: 50px;
+}
+.title-attack, .title-defense{
+	color: #FF2424;
+	font-size: 50px;
+	font-family: GreatSejagad;
+    padding-left: 10px;
+    position: relative;
+    top: 24px;
+}
+.title-defense {
+	color: #2499FF;
+}
+.main_title {
+    color: #fff;
+    font-size: 100px;
+    font-family: Rainbow;
+    font-style: italic;
+	line-height: 110px;
+}
+
+/*=============== BIO DO AGENTE (NOME, HISTORIA e IMAGEM) ===============*/
+.agent-attack, .agent-defense {
+	display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slideimg-atk, .slideimg-dfs {
+    width: 350px;
+    height: 100%;
+    border: solid 1px hsla(0, 100%, 50%, 0.5);
+    background-color: hsla(0,0%,100%,.15);
+}
+.slideimg-dfs{
+    border: solid 1px rgba(36, 153, 255, 0.5);
+}
+
+.agent-name-atk, .agent-name-dfs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 40px;
+    font-style: italic;
+    padding: 10px;
+    background-color: hsla(0, 100%, 50%, 0.5);
+}
+.agent-name-dfs{
+    background-color: rgba(36, 153, 255, 0.5);
+}
+
+.history-agent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 15px;
+    padding: 30px;
+    background-color: hsla(0, 0%, 100%, 0.301);
+}
+
+
+/*=============== BOTÃO AGENTE ===============*/
+.btns {
+    text-align: center;
+    margin-top: 100px;
+}
+.btns button {
+    height: 70px;
+    width: 200px;
+    font-size: 50px;
+    padding: 15px 10px 10px 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #FF2424;
+    font-family: Rainbow;
+    border: none;
+    color: #29262A;
+}
+.btns .button-defense {
+    height: 70px;
+    width: 200px;
+    font-size: 50px;
+    padding: 15px 10px 10px 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #2499FF;
+    font-family: Rainbow;
+    border: none;
+    color: #29262A;
+}
+.btns button:hover {
+    background: #FF2424;
+    border: none;
+    color: #0e0e16;
+    font-style: italic;
+    padding: 15px 10px 10px 8px;
+}
+.btns .button-defense:hover {
+    background: #2499FF;
+    border: none;
+    color: #0e0e16;
+    font-style: italic;
+    padding: 15px 10px 10px 8px;
+}
+
+
+
+/* Responsive Media Query */
+@media (max-width: 1400px){
+	.container {
+		width: 90%;
+	}
+}
+
+@media (max-width: 760px){
+	.agent-name-atk, .agent-name-dfs {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 545px) {
+    .slideimg-atk, .slideimg-dfs {
+        width: 200px;
+        height: 100%;
+    }
+    .agent-name-atk, .agent-name-dfs {
+        font-size: 25px;
+    }
+    .history-agent {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+    .game-logo {
+        max-width: 90px;
+        height: 100%;
+    }
+    .title-attack, .title-defense{
+        font-size: 30px;
+        top: 10px;
+    }
+    .main_title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .slideimg-atk, .slideimg-dfs {
+        width: 100px;
+        height: 100%;
+    }
+    .history-agent {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 390px) {
+    .agent-name-atk, .agent-name-dfs {
+        font-size: 20px;
+    }
+    .slideimg-atk, .slideimg-dfs {
+        width: 100px;
+        height: 100%;
+    }
+    .history-agent {
+        font-size: 12px;
+    }
+}
