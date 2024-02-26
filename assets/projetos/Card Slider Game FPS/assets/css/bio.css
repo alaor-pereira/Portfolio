@@ -24,12 +24,16 @@ body{
 }
 
 /*=============== BACKGROUND DA PÁGINA ===============*/
-.bg {
-    background-image:url(../images/background-bio.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    background-attachment:fixed;
+.background-bio{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /*=============== CONFIGS GERAIS DA SEÇÃO ===============*/
@@ -43,6 +47,8 @@ body{
 }
 .bioAgent-game{
     flex: 1 0 auto;
+    width: 100%;
+    position: relative;
 }
 /*=============== LOGO e TÍTULO ===============*/
 .game-logo {

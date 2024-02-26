@@ -24,19 +24,16 @@ body{
 }
 
 /*=============== BACKGROUND DA PÁGINA ===============*/
-.bg-atk {
-    background-image:url(../images/background-atk.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.background-attack, .background-defense{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
-.bg-dfs {
-    background-image:url(../images/background-dfs.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
+.bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /*=============== CONFIGS GERAIS DA SEÇÃO ===============*/
@@ -56,6 +53,8 @@ body{
 }
 .slider-game{
     flex: 1 0 auto;
+    width: 100%;
+    position: relative;
 }
 
 /*=============== LOGO e TÍTULO ===============*/
