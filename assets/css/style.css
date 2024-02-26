@@ -334,20 +334,20 @@ body.white {
     display: flex;
     justify-content: center;
     position: relative;
-    background: url(../images/about.jpg);
+    background: url(../images/perfil.png);
     -webkit-background-size: cover;
     background-color: var(--first-color);
-    border: solid 1px var(--second-color);
+    border: solid 1.5px var(--third-color);
     background-size: cover;
     background-position: center center;
     height: 400px;
     width: 450px;
     box-shadow: 4px 10px 5px 6px rgb(0,0,0,0.2);
-    animation: animate 8s ease-in-out infinite;
-    transition: all 1s ease-in-out;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
 }
 .box:hover {
-    border: solid 1px var(--first-color);
+    border: solid 1.5px var(--second-color);
 }
 @keyframes animate{
     0%{
@@ -523,6 +523,7 @@ body.white {
 .contact__button:hover {
     box-shadow: rgba(17, 17, 26, 0.3) 0px 8px 24px, rgba(17, 17, 26, 0.3) 0px 16px 56px, rgba(17, 17, 26, 0.3) 0px 24px 80px;
     background-color: var(--second-color);
+    cursor: pointer;
 }
 
 /*=============== FOOTER ===============*/
@@ -538,6 +539,7 @@ body.white {
     color: #222222;
     font-size: 1.5rem;
     font-weight: 600;
+    cursor: default;
 }
 .footer__social {
     margin-bottom: 0.5rem;

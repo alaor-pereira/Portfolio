@@ -38,6 +38,8 @@ body{
 	height: 100%;
 	margin: 0 auto;
     padding: 0;
+    position: relative;
+    overflow: hidden;
 }
 .bioAgent-game{
     flex: 1 0 auto;
