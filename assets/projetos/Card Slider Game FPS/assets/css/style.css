@@ -24,25 +24,11 @@ body{
 }
 
 /*=============== BACKGROUND DA PÁGINA ===============*/
-.bg-agentes {
+.bg{
     background-image:url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.bg-atk {
-    background-image:url(../images/background-atk.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.bg-dfs {
-    background-image:url(../images/background-dfs.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -54,10 +40,6 @@ body{
     padding: 0;
 }
 .slider {
-    --slider-padding: 1rem;
-    --slider-column-gap: 1rem;
-    --slide-width: 20%;
-    --slide-min-width: 15rem;
     position: relative;
     overflow: hidden;
 }
@@ -66,275 +48,164 @@ body{
 }
 
 /*=============== LOGO e TÍTULO ===============*/
-.game-logo {
-    width: 170px;
-    padding: 0px;
-    margin: 0;
-}
-.slider-title {
+.game-header {
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    margin: 30px 15px 50px 0px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
 }
-.title-attack, .title-defense{
-    text-align: center;
-	color: #FF2424;
-	font-size: 40px;
-	font-family: GreatSejagad;
-    position: relative;
+.game-logo {
+    width: 270px;
+    padding: 0px;
     margin-left: 10px;
-    text-shadow: 1.5px 1.5px 1px #000;
-}
-.title-defense {
-	color: #2499FF;
 }
 .main_title {
     color: #fff;
-    font-size: 90px;
+    font-size: 150px;
     font-family: Rainbow;
     font-style: italic;
-	line-height: 55px;
+    margin: 40px 0px 0px -20px;
+	line-height: 0;
     text-shadow: 1.5px 1.5px 1px #000;
 }
-
-/*=============== CARDS ===============*/
-.slider__cards {
-    display: flex;
-    overflow-x:scroll;
-    -ms-scroll-snap-type: x mandatory;
-        scroll-snap-type: x mandatory;
-    padding-inline: var(--slider-padding);
-    scroll-behavior: smooth;
-    list-style-type: none;
-    padding: 0;
-    
-    scrollbar-width: none;
-}
-.slider__cards > * {
-    flex: 0 0 var(--slide-width);
-    min-width: var(--slide-min-width);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    padding-right: 1rem;
-}
-.slider__cards::-webkit-scrollbar {
-    display: none;
-}
-.slideimg {
-    width: 100%;
-    background-color: hsla(0, 0%, 100%, 0.479) ;
-}
-.card_content {
-    background-color: #C3C3C3;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    padding: 5px;
+.game-title{
     text-align: center;
-}
-.card_content p {
-    color: #222222;
-    font-family: 'GreatSejagad';
-    font-size: 24px;
-    
-}
-.card-attack, .card-defense {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1.5px #961414;
-    border-radius: 5px;
-    width: 100%;
+	color: #ffac3f;
+	font-size: 110px;
+	font-family: GreatSejagad;
     position: relative;
-    overflow: hidden;
-}
-.card-defense {
-    border: solid 1.5px #2499FF;
-}
-.card-attack:hover {
-    cursor: pointer;
-    background-color: #961414;
-    transform: scale(1.0);
-    border: solid 3px #FF2424;
-    .card_content{
-        background-color: #FF2424;
-        position: fixed;
-        padding: 15px 5px 15px 5px;
-        text-align: center;
-    }
-    .card_content p {
-        font-size: 35px;
-        color: #2c0000;
-    }
-}
-.card-defense:hover {
-    cursor: pointer;
-    background-color: #2499FF;
-    transform: scale(1.0);
-    border: solid 3px #00ffe5;
-    .card_content{
-        background-color: #00ffe5;
-        position: fixed;
-        padding: 15px 5px 15px 5px;
-        text-align: center;
-    }
-    .card_content p {
-        font-size: 35px;
-        color: #00423c;
-    }
-}
-
-
-/*=============== SETAS DIRECIONAIS ===============*/
-button.slider__arrow {
-	background:  #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 0.1rem;
-    width: 30px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #961414;
-    opacity: 1;
-    
-}
-button.slider__arrow-defense {
-	background: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 0.1rem;
-    width: 30px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    color: #2499FF;
-    opacity: 1;
-}
-button.slider__arrow:hover {
-    background: #FF2424;
-    color: #fff;
-}
-button.slider__arrow-defense:hover {
-    background: #2499FF;
-    color: #fff;
-}
-.slider__arrows {
-    display: flex;
-    justify-content: center;
-    margin:2rem;
-}
-.slider__arrows [disabled] {
-    opacity: 0.5;
-    cursor:not-allowed;
+    margin: -30px -10px 0px 0px;
+    transform: rotate(-5deg);
+    text-shadow: 1.5px 1.5px 1px #000;
 }
 
 
 /*=============== BOTÕES ATAQUE/DEFESA ===============*/
-.slider .btns {
-    margin-top: 30px;
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
 }
-.slider .btns button {
-    height: 50px;
-    width: 150px;
-    font-size: 35px;
-    margin-left: 20px;
+.btns-img{
+    width: 200px;
+}
+.btns-img-horizont{
+    display: none;
+}
+.button-attack, .button-defense {
+    height: 70px;
+    width: 250px;
+    font-size: 60px;
     padding: 8px;
     cursor: pointer;
     background: #961414;
     font-family: Rainbow;
-    border: solid 1px #c3c3c3;
-    border-radius: 5px;
+    border: solid 2px #c3c3c3;
+    border-radius: 10px;
     color: #fff;
 }
-.slider .btns .button-defense {
-    height: 50px;
-    width: 150px;
-    font-size: 35px;
-    margin-left: 20px;
-    padding: 8px;
-    cursor: pointer;
+.button-defense {
     background: #0e3e69;
-    font-family: Rainbow;
-    border: solid 1px #c3c3c3;
-    color: #fff;
 }
-.slider .btns button:hover {
+.button-attack:hover{
     background: #ff2424;
     font-style: italic;
 }
-.slider .btns .button-defense:hover {
+.button-defense:hover {
     background: #2499FF;
     font-style: italic;
 }
-.footer-atk, .footer-dfs {
+
+/*=============== FOOTER ===============*/
+.game-footer{
     flex-shrink: 0;
     top: 0;
     bottom: 0px;
     width: 100%;
-    background-color: #2c0000;
-    color: #c3c3c3;
-    font-family: sans-serif;
+    background-color: #222222;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
     font-size: 12px;
     text-align: center;
     padding: 0.3rem;
 }
-.footer-dfs{
-    background-color: #0e3e69;
-}
 
 
-/*=============== Responsive Media Query ===============*/
+/*=============== RESPONSIVE MEDIA QUERY ===============*/
 @media (max-width: 1400px){
 	.container {
 		width: 90%;
 	}
 }
-
-@media (min-width: 1200px){
-	.menu ul {
-		display: flex;
-		justify-content: center;
+@media (max-width: 780px) {
+    .game-logo{
+        width: 200px;
+    }
+	.main_title {
+		font-size: 100px;
 	}
-	
+	.game-title{
+		font-size: 80px;
+	}
+    .btns-img{
+        width: 140px;
+    }
+    .button-attack, .button-defense {
+        height: 50px;
+        width: 140px;
+        font-size: 35px;
+    }
 }
-
-@media (max-width: 769px) {
+@media (max-width: 470px) {
+    .game-logo{
+        width: 180px;
+    }
+	.main_title {
+		font-size: 80px;
+	}
+	.game-title{
+		font-size: 60px;
+        margin: -15px 0 0 0;
+	}
+    .btns{
+        flex-direction: column;
+        margin: 70px 0 0 0;
+    }
+    .btns-img{
+        display: none;
+    }
+    .btns-img-horizont{
+        display: block;
+        width: 180px;
+        margin: 20px;
+    }
+    .button-attack, .button-defense {
+        height: 60px;
+        width: 200px;
+        font-size: 50px;
+    }
+}
+@media (max-width: 300px) {
     .game-logo{
         width: 120px;
     }
 	.main_title {
-		font-size: 60px;
-        line-height: 20px;
+		font-size: 40px;
+        margin-left: 0;
 	}
-	.title-attack, .title-defense{
+	.game-title{
 		font-size: 30px;
+        margin: -10px 0 0 0;
 	}
-    .slider .btns button {
+    .btns-img-horizont{
+        width: 120px;
+        margin: 20px;
+    }
+    .button-attack, .button-defense {
         height: 40px;
-        width: 90px;
-        font-size: 25px;
-        margin-left: 10px;
-    }
-    .slider .btns .button-defense {
-        height: 40px;
-        width: 90px;
-        font-size: 25px;
-        margin-left: 10px;
-    }
-}
-
-@media (max-width: 450px) {
-    .slider-title{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-around;
-    }
-    .slider .btns button {
-        margin-left: 15px;
-    }
-    .slider .btns .button-defense {
-        margin-left: 15px;
+        width: 140px;
+        font-size: 30px;
     }
 }
